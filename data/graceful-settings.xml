@@ -2,8 +2,8 @@
 <gconfschemafile>
     <schemalist>
         <schema>
-            <key>/graceful/desktop/background</key>
-            <applyto>/graceful/desktop/background</applyto>
+            <key>/graceful/desktop/desktop-background</key>
+            <applyto>/graceful/desktop/desktop-background</applyto>
             <owner>graceful linux</owner>
             <type>string</type>
             <default></default>

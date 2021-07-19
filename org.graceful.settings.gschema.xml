@@ -1,6 +1,6 @@
 <schemalist>
   <schema id="org.graceful.settings" path="/graceful/desktop/">
-    <key name="background" type="s">
+    <key name="desktop-background" type="s">
       <default>''</default>
       <summary>background</summary>
     </key>

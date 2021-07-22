@@ -1,9 +1,6 @@
-TEMPLATE = app
+TEMPLATE = aux
 
-CONFIG += myfeatures
-
-SOURCES += \
-    $$PWD/main.c
+CONFIG  += myfeatures
 
 system($$PWD/bin/gsettings-schema-convert --force --gconf --xml --schema-id "org.graceful.settings" --output org.graceful.settings.gschema.xml $$PWD/data/graceful-settings.xml)
 

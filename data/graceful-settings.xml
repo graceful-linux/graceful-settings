@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <gconfschemafile>
     <schemalist>
+        <!-- desktop background picture -->
         <schema>
             <key>/graceful/desktop/desktop-background</key>
             <applyto>/graceful/desktop/desktop-background</applyto>
@@ -9,6 +10,18 @@
             <default></default>
             <locale name="C">
                 <short>background</short>
+                <long></long>
+            </locale>
+        </schema>
+        <!-- gtk theme -->
+        <schema>
+            <key>/graceful/daemon/gtk-theme</key>
+            <applyto>/graceful/daemon/gtk-theme</applyto>
+            <owner>graceful linux</owner>
+            <type>string</type>
+            <default></default>
+            <locale name="C">
+                <short>gtk theme</short>
                 <long></long>
             </locale>
         </schema>

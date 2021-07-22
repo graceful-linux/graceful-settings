@@ -1,8 +1,18 @@
 <schemalist>
-  <schema id="org.graceful.settings" path="/graceful/desktop/">
+  <schema id="org.graceful.settings" path="/graceful/">
+    <child name="desktop" schema="org.graceful.settings.desktop"/>
+    <child name="daemon" schema="org.graceful.settings.daemon"/>
+  </schema>
+  <schema id="org.graceful.settings.desktop" path="/graceful/desktop/">
     <key name="desktop-background" type="s">
       <default>''</default>
       <summary>background</summary>
+    </key>
+  </schema>
+  <schema id="org.graceful.settings.daemon" path="/graceful/daemon/">
+    <key name="gtk-theme" type="s">
+      <default>''</default>
+      <summary>gtk theme</summary>
     </key>
   </schema>
 </schemalist>

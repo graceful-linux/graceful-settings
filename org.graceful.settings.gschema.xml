@@ -1,4 +1,4 @@
-<schemalist>
+<schemalist gettext-domain="org.graceful.settings">
   <schema id="org.graceful.settings" path="/graceful/">
     <child name="desktop" schema="org.graceful.settings.desktop"/>
     <child name="daemon" schema="org.graceful.settings.daemon"/>
@@ -13,6 +13,18 @@
     <key name="gtk-theme" type="s">
       <default>''</default>
       <summary>gtk theme</summary>
+    </key>
+    <key name="icon-theme" type="s">
+      <default>''</default>
+      <summary>icon theme</summary>
+    </key>
+    <key name="cursor-theme" type="s">
+      <default>''</default>
+      <summary>cursor theme</summary>
+    </key>
+    <key name="cursor-size" type="i">
+      <default>0</default>
+      <summary>cursor size</summary>
     </key>
   </schema>
 </schemalist>

@@ -13,6 +13,8 @@
                 <long></long>
             </locale>
         </schema>
+
+        <!-- graceful-daemon - start -->
         <!-- gtk theme -->
         <schema>
             <key>/graceful/daemon/gtk-theme</key>
@@ -25,5 +27,42 @@
                 <long></long>
             </locale>
         </schema>
+        <!-- icon theme -->
+        <schema>
+            <key>/graceful/daemon/icon-theme</key>
+            <applyto>/graceful/daemon/icon-theme</applyto>
+            <owner>graceful linux</owner>
+            <type>string</type>
+            <default></default>
+            <locale name="C">
+                <short>icon theme</short>
+                <long></long>
+            </locale>
+        </schema>
+        <!-- cursor theme -->
+        <schema>
+            <key>/graceful/daemon/cursor-theme</key>
+            <applyto>/graceful/daemon/cursor-theme</applyto>
+            <owner>graceful linux</owner>
+            <type>string</type>
+            <default></default>
+            <locale name="C">
+                <short>cursor theme</short>
+                <long></long>
+            </locale>
+        </schema>
+        <!-- cursor size -->
+        <schema>
+            <key>/graceful/daemon/cursor-size</key>
+            <applyto>/graceful/daemon/cursor-size</applyto>
+            <owner>graceful linux</owner>
+            <type>int</type>
+            <default></default>
+            <locale name="C">
+                <short>cursor size</short>
+                <long></long>
+            </locale>
+        </schema>
+        <!-- graceful-daemon - end -->
     </schemalist>
 </gconfschemafile>

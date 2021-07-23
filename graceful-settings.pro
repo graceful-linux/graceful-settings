@@ -2,7 +2,7 @@ TEMPLATE = aux
 
 CONFIG  += myfeatures
 
-system($$PWD/bin/gsettings-schema-convert --force --gconf --xml --schema-id "org.graceful.settings" --output org.graceful.settings.gschema.xml $$PWD/data/graceful-settings.xml)
+system($$PWD/bin/gsettings-schema-convert -f -g -x -d "org.graceful.settings" -i "org.graceful.settings" --output org.graceful.settings.gschema.xml $$PWD/data/graceful-settings.xml)
 
 
 OTHER_FILES = \

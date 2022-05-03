@@ -1,7 +1,7 @@
 # Maintainer: dingjing <dingjing@live.cn>
 
 pkgname=graceful-settings
-pkgver=1.0.2
+pkgver=1.0.3
 pkgrel=1
 pkgdesc='graceful linux settings'
 url='https://github.com/graceful-linux/graceful-settings'
@@ -11,21 +11,20 @@ groups=('graceful-linux')
 depends=('glib2')
 makedepends=('qt5-tools' 'make')
 source=("https://github.com/graceful-linux/graceful-settings/archive/refs/tags/$pkgver.tar.gz")
-sha512sums=('57c3820006a500f822f2ea5260f47b5d44957e9e889f974442a3d5645ff6f918c600445e426d7242204bb0c880f879d16616bd885d47fc9fad44827b690395d6')
+sha512sums=('677087fc2369707f30d5fe0980381b27d4d77adfb9909f3553b996e37abfea84beb4f41e78415b4ea7bef99573a9d0953e3ca7c7644a342c974286a4474865f9')
 
 prepare() {
 #mv $pkgver "graceful-greeter-$pkgver"
-  cd $pkgname-$pkgver && mkdir build && cd build 
+  cd $pkgname-$pkgver  
 }
 
 build() {
-  cd $pkgname-$pkgver/build
-  qmake ..
+  cd $pkgname-$pkgver
+  qmake
   make
 }
 
 package() {
-  cd $pkgname-$pkgver/build
-  echo "$PWD/build/"
+  cd $pkgname-$pkgver
   make install
 }

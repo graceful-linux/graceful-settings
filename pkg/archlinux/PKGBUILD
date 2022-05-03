@@ -11,7 +11,7 @@ groups=('graceful-linux')
 depends=('glib2')
 makedepends=('qt5-tools' 'make')
 source=("https://github.com/graceful-linux/graceful-settings/archive/refs/tags/$pkgver.tar.gz")
-sha512sums=('677087fc2369707f30d5fe0980381b27d4d77adfb9909f3553b996e37abfea84beb4f41e78415b4ea7bef99573a9d0953e3ca7c7644a342c974286a4474865f9')
+sha512sums=('959a3370876c1dd3d55835c56a4197e860d4ea0d7fa2c21c324ad4bc4650c2cd0ffee16859278e59027c87ed8466d83360a71a63853ce98bb8ad0db474166dd6')
 
 prepare() {
 #mv $pkgver "graceful-greeter-$pkgver"
@@ -26,5 +26,5 @@ build() {
 
 package() {
   cd $pkgname-$pkgver
-  make install
+  make INSTALL_ROOT=$pkgdir install
 }

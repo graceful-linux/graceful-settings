@@ -1,7 +1,42 @@
 <schemalist gettext-domain="org.graceful.settings">
   <schema id="org.graceful.settings" path="/graceful/">
+    <child name="log" schema="org.graceful.settings.log"/>
     <child name="desktop" schema="org.graceful.settings.desktop"/>
     <child name="daemon" schema="org.graceful.settings.daemon"/>
+  </schema>
+  <schema id="org.graceful.settings.log" path="/graceful/log/">
+    <key name="graceful-udisks" type="b">
+      <default>false</default>
+      <summary>graceful-udisks</summary>
+    </key>
+    <key name="graceful-systemd" type="b">
+      <default>false</default>
+      <summary>graceful-systemd</summary>
+    </key>
+    <key name="graceful-util-linux" type="b">
+      <default>false</default>
+      <summary>graceful-util-linux</summary>
+    </key>
+    <key name="graceful-greeter" type="b">
+      <default>false</default>
+      <summary>graceful-greeter</summary>
+    </key>
+    <key name="graceful-gvfs" type="b">
+      <default>false</default>
+      <summary>graceful-gvfs</summary>
+    </key>
+    <key name="graceful-session" type="b">
+      <default>false</default>
+      <summary>graceful-session</summary>
+    </key>
+    <key name="graceful-glib" type="b">
+      <default>false</default>
+      <summary>graceful-glib</summary>
+    </key>
+    <key name="graceful-settings-daemon" type="b">
+      <default>false</default>
+      <summary>graceful-settings-daemon</summary>
+    </key>
   </schema>
   <schema id="org.graceful.settings.desktop" path="/graceful/desktop/">
     <key name="desktop-background" type="s">

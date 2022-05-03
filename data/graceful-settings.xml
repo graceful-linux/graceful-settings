@@ -1,6 +1,104 @@
 <?xml version="1.0"?>
 <gconfschemafile>
     <schemalist>
+        <!-- log config - start -->
+        <schema>
+            <key>/graceful/log/graceful-udisks</key>
+            <applyto>/graceful/log/graceful-udisks</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-udisks</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-systemd</key>
+            <applyto>/graceful/log/graceful-systemd</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-systemd</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-util-linux</key>
+            <applyto>/graceful/log/graceful-util-linux</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-util-linux</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-greeter</key>
+            <applyto>/graceful/log/graceful-greeter</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-greeter</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-gvfs</key>
+            <applyto>/graceful/log/graceful-gvfs</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-gvfs</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-session</key>
+            <applyto>/graceful/log/graceful-session</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-session</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-glib</key>
+            <applyto>/graceful/log/graceful-glib</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-glib</short>
+                <long></long>
+            </locale>
+        </schema>
+
+        <schema>
+            <key>/graceful/log/graceful-settings-daemon</key>
+            <applyto>/graceful/log/graceful-settings-daemon</applyto>
+            <owner>graceful linux</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>graceful-settings-daemon</short>
+                <long></long>
+            </locale>
+        </schema>
+        <!-- log config - end -->
+
         <!-- desktop background picture -->
         <schema>
             <key>/graceful/desktop/desktop-background</key>
@@ -27,6 +125,7 @@
                 <long></long>
             </locale>
         </schema>
+
         <!-- icon theme -->
         <schema>
             <key>/graceful/daemon/icon-theme</key>
@@ -39,6 +138,7 @@
                 <long></long>
             </locale>
         </schema>
+
         <!-- cursor theme -->
         <schema>
             <key>/graceful/daemon/cursor-theme</key>
@@ -51,6 +151,7 @@
                 <long></long>
             </locale>
         </schema>
+
         <!-- cursor size -->
         <schema>
             <key>/graceful/daemon/cursor-size</key>

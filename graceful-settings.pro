@@ -10,10 +10,10 @@ OTHER_FILES = \
     $$PWD/org.graceful.settings.gschema.xml             \
 
 
-GSETTINGS_SCHEMA.path = $$QT_INSTALL_PREFIX/share/glib-2.0/schemas/
+GSETTINGS_SCHEMA.path = /usr/share/glib-2.0/schemas/
 GSETTINGS_SCHEMA.files = $$PWD/org.graceful.settings.gschema.xml
 
-GSETTINGS_COMPILE.path =$$QT_INSTALL_PREFIX/share/glib-2.0/schemas/
+GSETTINGS_COMPILE.path = /usr/share/glib-2.0/schemas/
 unix:GSETTINGS_COMPILE.extra = glib-compile-schemas /usr/share/glib-2.0/schemas
 
 INSTALLS = GSETTINGS_SCHEMA GSETTINGS_COMPILE
